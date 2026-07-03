@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rotina - Hábitos </title>
+
+    <!--LINKS-->
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="text-black dark:text-white bg-white dark:bg-[#0B1120]">
+    
+    <header class="px-8 h-17.5 flex items-center justify-evenly max-xl:justify-between">
+        <div class="flex items-center gap-2">
+            <p class="p-1.5 border-5 border-[#2DD4BF] rounded-md"></p>
+            <h3 class="text-xl font-bold">Rotina</h3>
+        </div>
+
+        <!--PARTE PARA PC-->
+        <div class="max-lg:hidden">
+            <ul class="[&>li]:duration-200 text-(--Corverde) flex font-medium [&>li]:px-3 dark:[&>li]:hover:text-white [&>li]:hover:text-black">
+                <li> <a href="">Recursos</a> </li>
+                <li> <a href="">Demo</a> </li>
+                <li> <a href="">Números</a> </li>
+                <li> <a href="">Planos</a> </li>
+                <li> <a href="">FAQ</a> </li>
+            </ul>
+        </div>
+
+        <div class="max-lg:hidden flex items-center gap-4">
+            <img src="img/moon.png" alt="mudar" class="duration-200 px-3 py-2.5 shadow-[0_0_2px_white] rounded-xl hover:rotate-20">
+
+            <button class="duration-200 font-medium px-5 py-1.5 shadow-[0_0_2px_white] rounded-xl hover:shadow-[0_0_2px_#0D9488] hover:text-(--Corverde)">Entrar</button>
+
+            <button class="px-5 py-1.5 dark:shadow-[0_0_3px_rgba(255,255,255)] shadow-[0_0_3px_rgba(0,0,0)] font-medium bg-(--Corverde) dark:text-black text-white rounded-xl">Começar Grátis</button>
+        </div>
+
+        <!--PARTE PARA MOBILE-->
+
+        <div class="flex gap-10">
+            <img src="img/moon.png" alt="mudar" class="lg:hidden duration-200 px-3 py-2.5 shadow-[0_0_2px_white] rounded-xl hover:rotate-20">
+
+            <img src="img/menuWhite.png" id="menu" class="duration-200">
+        </div>
+
+    </header>
+
+</body>
+</html>
