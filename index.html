@@ -10,9 +10,9 @@
 
     <link rel="stylesheet" href="./output.css">
 </head>
-<body class="text-black dark:text-white bg-white dark:bg-[#0B1120]">
+<body class="text-white bg-[#0B1120] h-300">
     
-    <header class="relative px-8 h-17.5 flex items-center justify-evenly max-xl:justify-between">
+    <header class="duration-200 sticky top-0 px-8 h-17.5 flex items-center justify-evenly max-xl:justify-between">
         <div class="flex items-center gap-2">
             <p class="p-1.5 border-5 border-[#2DD4BF] rounded-md"></p>
             <h3 class="text-xl font-bold">Rotina</h3>
@@ -38,25 +38,48 @@
 
         <!--PARTE PARA MOBILE-->
 
-        <div class="lg:hidden flex gap-10">
+        <div class="lg:hidden flex gap-10 items-center">
             <img src="img/menuWhite.png" id="menu" class="duration-200">
 
-            <div id="options" class="duration-200 flex opacity-0 pointer-events-none w-full absolute flex-col pb-6 px-8 gap-5 right-0 top-full shadow-[0_1px_0.5px_#ffffff36] [&>a]:shadow-[0_1px_0.5px_#ffffff36] [&>a]:py-2">
-                <a href="">Como Funciona</a>
+        </div>
+        
+    </header>
+    <div id="options" class="bg-[#0b1120] duration-200 flex opacity-0 pointer-events-none w-full absolute flex-col pb-6 px-8 gap-5 shadow-[0_1px_0.5px_#ffffff36] [&>a]:shadow-[0_1px_0.5px_#ffffff36] [&>a]:py-2">
+        <a href="">Como Funciona</a>
 
-                <a href="">Recursos</a>
+        <a href="">Recursos</a>
 
-                <a href="">Experimentar</a>
+        <a href="">Experimentar</a>
 
-                <a href="">Preços</a>
+        <a href="">Preços</a>
 
-                <a href="">FAQ</a>
+        <a href="">FAQ</a>
 
-                <button class="duration-200 px-5 py-2 shadow-[0_3px_10px_#ffffff36]  font-medium bg-(--Corverde) hover:-translate-y-0.5 text-black hover:bg-[#10ada0] rounded-xl">Começar Grátis</button>
+        <button class="duration-200 px-5 py-2 shadow-[0_3px_10px_#ffffff36]  font-medium bg-(--Corverde) hover:-translate-y-0.5 text-black hover:bg-[#10ada0] rounded-xl">Começar Grátis</button>
+    </div>
+
+    <main class="px-8 mt-30">
+        <div class="flex flex-col gap-4">
+            <a href="">Novo modo: Foco com relatórios </a>
+            <h1 class="text-5xl font-bold">Suas tarefas e seu foco, <span class="text-(--Corverde)"> no mesmo app </span></h1>
+
+            <p>O Rotina reúne sua lista de tarefas e um cronômetro de foco em um só lugar. Planeje o dia, execute uma tarefa de cada vez e veja seu progresso no fim. Feito para freelancers, estudantes e times pequenos.</p>
+            
+            <div class="flex gap-6">
+                <button class="duration-200 px-6 py-3 shadow-[0_0_3px_rgba(255,255,255)]  font-medium bg-(--Corverde) hover:-translate-y-0.5 text-black hover:bg-[#10ada0 rounded-xl">Começar Grátis</button>
+                <button class="duration-200 px-6 py-3 shadow-[0_0_3px_rgba(255,255,255)] font-medium  hover:-translate-y-0.5 bg-[#0c0f1b] rounded-xl">Ver como funciona</button>
+            </div>
+
+            <div>
+                <span>Sem cartão de crédito </span>
+                <span>Pronto em 2 minutos </span>
+                <span>Funciona Offline </span>
             </div>
         </div>
+        <div>
 
-    </header>
-
+        </div>
+    </main>
+    
 </body>
 </html>
