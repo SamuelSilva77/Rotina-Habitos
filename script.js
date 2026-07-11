@@ -28,3 +28,27 @@ menuButton.addEventListener("click", () => {
     menu.classList.toggle("pointer-events-none")
 }, 200);
 });
+
+//DAR TRANSPARENCIA PARA O HEADER
+
+let header = document.querySelector("header")
+
+body.addEventListener("wheel", () => {
+  
+  setTimeout(() => {
+    let distanciaTopo = window.scrollY
+
+    console.log(distanciaTopo)
+    if(distanciaTopo < 30){
+      header.classList.replace("bg-[#0b1120d8]", "bg-[#0b1120]")
+      header.classList.remove("shadow-sm")
+      header.classList.remove("shadow-[#ffffffbb]")
+
+    }else{
+      header.classList.replace("bg-[#0b1120]", "bg-[#0b1120d8]")
+      header.classList.add("shadow-sm")
+      header.classList.add("shadow-[#ffffffbb]")
+    }
+
+  }, 150);
+})
