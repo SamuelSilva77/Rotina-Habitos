@@ -12,7 +12,7 @@
 </head>
 <body class="text-white bg-[#0B1120] h-300">
     
-    <header class="duration-400 bg-[#0b1120] backdrop-blur-sm sticky top-0 px-8 h-17.5 flex items-center justify-evenly max-xl:justify-between">
+    <header class="z-50 duration-400 bg-[#0b1120] backdrop-blur-sm sticky top-0 px-8 h-17.5 flex items-center justify-evenly max-xl:justify-between">
         <div class="flex items-center gap-2">
             <p class="p-1.5 border-5 border-[#2DD4BF] rounded-md"></p>
             <h3 class="text-xl font-bold">Rotina</h3>
@@ -59,9 +59,14 @@
         </div>
     </header>
 
-    <main class="px-8 mt-30 max-md:mt-15">
-        <div class="flex flex-col gap-4">
-            <a href="">Novo modo: Foco com relatórios </a>
+    <main class="flex items-center justify-center px-8 mt-30 max-md:mt-15">
+
+        <div class="flex flex-1/2 flex-col gap-4">
+            <a href="" class="flex items-center gap-2 duration-300 text-(--Corverde) shadow-[0_0_3px] shadow-[#ffffff7a] hover:shadow-[white] hover:text-[white] hover:-translate-y-1 rounded-lg w-max px-4 py-1 bg-[#0e111b]">
+                Novo modo: Foco com relatórios
+                <img src="img/next.png" alt="">
+            </a>
+
             <h1 class="text-5xl font-bold">Suas tarefas e seu foco, <span class="text-(--Corverde)"> no mesmo app </span></h1>
 
             <p>O Rotina reúne sua lista de tarefas e um cronômetro de foco em um só lugar. Planeje o dia, execute uma tarefa de cada vez e veja seu progresso no fim. Feito para freelancers, estudantes e times pequenos.</p>
@@ -71,14 +76,27 @@
                 <button class="duration-200 px-6 py-3 shadow-[0_0_3px_rgba(255,255,255)] font-medium  hover:-translate-y-0.5 bg-[#0c0f1b] rounded-xl">Ver como funciona</button>
             </div>
 
-            <div>
-                <span>Sem cartão de crédito </span>
-                <span>Pronto em 2 minutos </span>
-                <span>Funciona Offline </span>
-            </div>
+            <ul class="flex gap-10 [&>li]:relative [&>li]:items-center [&>li]:flex  [&>li]:before:content-[] [&>li]:before:absolute [&>li]:before:-left-5 [&>li]:before:mr-2 [&>li]:before:size-3 [&>li]:before:bg-[#0b2d30] [&>li]:before:border-2 [&>li]:before:border-(--Corverde) [&>li]:before:rounded-xl"> 
+                <li class="ml-5">Sem cartão de crédito </li>
+                <li>Pronto em 2 minutos </li>
+                <li>Funciona Offline </li>
+            </ul>
         </div>
-        <div>
 
+        <div class="flex-1/2 flex justify-center" >
+            <div class="animate-card flex-1/2 flex flex-col h-100 max-w-80 shadow-[0_0_2px_white,0_0_3px_white] rounded-xl">
+                <div class="rounded-t-xl p-4 flex justify-between bg-[#122b30]">
+                    <div class="[&>button]:p-1.5 [&>button]:rounded-2xl">
+                        <button class="bg-yellow-500"></button>
+                        <button class="bg-red-500"></button>
+                        <button class="bg-green-500"></button>
+                    </div>
+                    <span>Hoje • 3 tarefas</span>
+                </div>
+                <div class="shadow-[0_-0.5px_1px_white] h-full bg-[#122430] rounded-b-xl">
+    
+                </div>
+            </div>
         </div>
     </main>
     

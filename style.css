@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+
+
+@theme{
+    --animate-card: card 8s infinite;
+    
+    @keyframes card {
+        0%, 100%{
+            transform: translate(0, -10px)
+        }
+        50%{
+            transform: translate(0, 30px)
+        }
+    }
+}
+
 :root{
     --Corverde: #0D9488;
     --Cinzaazulado: #5B6573;
