@@ -222,7 +222,7 @@ faq.forEach((item, index) => {
         alterarIMG(div, item,"plus", true)
       
     }else{
-        alterarIMG(div, item, "minus", false)
+        alterarIMG(div, item, "minus")
     }
   
   })
@@ -241,7 +241,7 @@ function AlterarResto(div){
     })
 }
 
-function alterarIMG(div, item, img, remover){
+function alterarIMG(div, item, img, remover = false){
 
         if(remover){
           div.classList.remove("max-h-80")
